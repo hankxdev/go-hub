@@ -1,0 +1,1 @@
+This is just a simple too written in Golang to commit and push code in the same time
