@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"os"
 	"os/exec"
 
@@ -22,37 +23,24 @@ func main() {
 		os.Exit(1)
 	}
 
-	// gitAdd := exec.Command("hub", "add", ".")
-	// gitCommit := exec.Command("hub", "commit", fmt.Sprintf("-m '%s'", msg))
-	// gitPush := exec.Command("git", "push")
-	// var out bytes.Buffer
-	// if err := pipe.Command(
-	// 	&out,
-	// 	gitAdd,
-	// 	gitCommit,
-	// 	gitPush,
-	// 	exec.Command("git", "status"),
-	// 	exec.Command("git", "add ."),
-	// 	exec.Command("ls"),
-	// ); err != nil {
-	// 	log.Fatal(err)
-	// }
-
-	// if _, err := io.Copy(os.Stdout, &out); err != nil {
-	// 	log.Fatal(err)
-	// }
-
-	gitAdd := exec.Command("hub", "add", ".")
-	gitCommit := exec.Command("hub", "commit", fmt.Sprintf("-m '%s'", msg))
-
+	gitAdd := exec.Command("git", "add", ".")
+	gitCommit := exec.Command("git", "commit", fmt.Sprintf("-m '%s'", msg))
+	gitPush := exec.Command("git", "push")
 	err := gitAdd.Run()
-	err1 := gitCommit.Run()
+
 	if err != nil {
-		fmt.Println(err)
+		log.Fatal(err)
 	}
-	if err1 != nil {
-		fmt.Println(err1)
+	err = gitCommit.Run()
+	if err != nil {
+		log.Fatal(err)
 	}
+	err = gitPush.Run()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println("Push successfully")
 }
 
 func init() {
