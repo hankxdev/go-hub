@@ -24,17 +24,20 @@ func main() {
 	}
 
 	gitAdd := exec.Command("git", "add", ".")
-	gitCommit := exec.Command("git", "commit", fmt.Sprintf("-m '%s'", msg))
+	gitCommit := exec.Command("git", "commit", fmt.Sprintf("-m %s", msg))
 	gitPush := exec.Command("git", "push")
-	err := gitAdd.Run()
 
+	echo("Adding all Changes")
+	err := gitAdd.Run()
 	if err != nil {
 		log.Fatal(err)
 	}
+	echo(fmt.Sprintf("committing with message %s", msg))
 	err = gitCommit.Run()
 	if err != nil {
 		log.Fatal(err)
 	}
+	echo("Pushing")
 	err = gitPush.Run()
 	if err != nil {
 		log.Fatal(err)
@@ -45,4 +48,8 @@ func main() {
 
 func init() {
 	flag.StringVarP(&msg, "msg", "m", "new code", "Commit Message")
+}
+
+func echo(msg string) {
+	fmt.Println(msg)
 }
