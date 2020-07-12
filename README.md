@@ -26,5 +26,7 @@ go-hub -m 'some message'
 
 And it will do all the things above for you.
 
+<img src="./go-hub.png">
 
-This is just a suoer simple tool, and I'm barely new to writing GO and CLI. Make sure you really want to add all your changed files before you run this command.
+
+This is just a super simple tool, and I'm new to writing GO and CLI. Make sure you really want to add all your changed files before you run this command.
