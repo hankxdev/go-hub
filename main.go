@@ -32,7 +32,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	echo(fmt.Sprintf("committing with message %s", msg))
+	echo(fmt.Sprintf("committing with message: %s", msg))
 	err = gitCommit.Run()
 	if err != nil {
 		log.Fatal(err)
