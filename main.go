@@ -44,7 +44,6 @@ func main() {
 	}
 
 	fmt.Println("Push successfully")
-	//test build
 }
 
 func init() {
