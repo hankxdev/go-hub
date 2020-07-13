@@ -1,0 +1,4 @@
+4b11ebb3def6f1cb9c0cfc03096e8e08ddc96c0f9261d276f60024371bdd03f5  go-hub_v0.0.0-next_Darwin_i386.tar.gz
+4ba73f6464cda4478867b24e31ad5e6327407b899ba49bacfb9a8b463e05c38c  go-hub_v0.0.0-next_Linux_x86_64.tar.gz
+a24bda20296bb60a7fe91a6daad3d1f1c385c749daa7216614616852111637e1  go-hub_v0.0.0-next_Darwin_x86_64.tar.gz
+b907e481105238f1a700f4a3f18a2155a053c7bd033f41e710c36f4b04d10cc6  go-hub_v0.0.0-next_Linux_i386.tar.gz
