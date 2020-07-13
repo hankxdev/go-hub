@@ -2,6 +2,7 @@
 
 This is just a super simple tool written in Golang to commit and push code at the same time.
 
+
 ## Without it, if you want to commit and push your code
 
 - git add . 
@@ -30,3 +31,13 @@ And it will do all the things above for you.
 
 
 This is just a super simple tool, and I'm new to writing GO and CLI. Make sure you really want to add all your changed files before you run this command.
+
+
+# installation
+  
+- download from release page
+- or build yourself from source code
+- or from homebrew
+  - `brew tap hankxdev/go-hub`
+  - `brew install go-hub`
+
