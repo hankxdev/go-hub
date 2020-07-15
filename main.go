@@ -16,7 +16,9 @@ var (
 func main() {
 	flag.Parse()
 
-	if flag.NFlag() == 0 {
+	// args := flag.Args()
+
+	if len(flag.Args()) < 1 && flag.NFlag() == 0 {
 		fmt.Printf("Usage:  %s [options]\n", os.Args[0])
 		fmt.Println("Options:")
 		flag.PrintDefaults()
