@@ -29,13 +29,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       -
-       name: bump-homebrew-formula
-       uses: mislav/bump-homebrew-formula-action@v1.6
-       with:
-          # The name of the Homebrew formula
-          formula-name: homebrew-go-hub
-          # The repository where the formula should be updated
-          homebrew-tap: hankxdev/homebrew-go-hub
-       env:
-          COMMITTER_TOKEN: ${{ secrets.PAT }}
-           
+        name: bump-homebrew-formula
+        uses: mislav/bump-homebrew-formula-action@v1.6
+        with:
+            # The name of the Homebrew formula
+            formula-name: go-hub
+            # The repository where the formula should be updated
+            homebrew-tap: hankxdev/homebrew-go-hub
+        env:
+            COMMITTER_TOKEN: ${{ secrets.PAT }}
+            
