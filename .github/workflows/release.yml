@@ -28,11 +28,4 @@ jobs:
           args: release --rm-dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      -
-        name: update brew
-        goarm: 6
-        tap:
-          owner: hankxdev
-          name: homebrew-go-hub
-          token: ${{ secrets.PAT }}
             

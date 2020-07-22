@@ -26,3 +26,10 @@ changelog:
     exclude:
     - '^docs:'
     - '^test:'
+brews:
+  -
+    name: gohub
+    goarm: 6
+    tap:
+      owner: hankxdev
+      name: homebrew-go-hub
