@@ -28,8 +28,10 @@ changelog:
     - '^test:'
 brews:
   -
-    name: gohub
+    name: go-hub
     goarm: 6
     tap:
       owner: hankxdev
       name: homebrew-go-hub
+      desc: "A simple go cli to make github common actions simpler"
+      homepage: "https://github.com/hankxdev/go-hub"
