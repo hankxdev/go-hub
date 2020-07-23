@@ -33,6 +33,5 @@ brews:
     tap:
       owner: hankxdev
       name: homebrew-go-hub
-      token: "{{ env.GITHUB_TOKEN }}
     description: "A simple go cli to make github common actions simpler"
     homepage: "https://github.com/hankxdev/go-hub"
