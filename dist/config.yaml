@@ -4,6 +4,18 @@ release:
     owner: hankxdev
     name: go-hub
   name_template: '{{.Tag}}'
+brews:
+- name: go-hub
+  tap:
+    owner: hankxdev
+    name: homebrew-go-hub
+  commit_author:
+    name: goreleaserbot
+    email: goreleaser@carlosbecker.com
+  install: bin.install "go-hub"
+  description: A simple go cli to make github common actions simpler
+  homepage: https://github.com/hankxdev/go-hub
+  goarm: "6"
 scoop:
   name: go-hub
   commit_author:

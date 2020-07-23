@@ -2,7 +2,8 @@
 
 ## Changelog
 
-837cf5f  add 2 new commands
-d7091c7  prepare for new command
-3e4d175  update reademe and built files
+342b52d  fix token
+c1a17f5 Update .goreleaser.yml
+1a44635 Update .goreleaser.yml
+5993dbb not just on tag
 
